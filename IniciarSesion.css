@@ -1,0 +1,154 @@
+body {
+    font-family: 'Livvic', sans-serif;
+    margin: 0px;
+    background-image: url(./chica-en-vista-de-la-ciudad-cyberpunk_3840x2611_xtrafondos.com.jpg);
+    background-size: cover;
+    /* background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(142,142,203,1) 50%, rgba(0,212,255,1) 100%); */
+
+}
+.Header {
+    /* background: rgb(2,0,36); */
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(142,142,203,1) 35%, rgba(0,212,255,1) 100%); */
+    height: 80px;
+    width: 100%;
+}
+.Header__logo{
+    width: 200px;
+    height: 65px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+.Login {
+    /* background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(142,142,203,1) 35%, rgba(0,212,255,1) 100%); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 30px;
+    min-height: calc(100vh - 200px);
+}
+.Login__container {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+    border-radius: 40px;
+    color: white;
+    padding: 60px 68px 40px;
+    min-height: 700px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    box-shadow: 0 0 20px white;
+}
+.Login__container > h2 {
+    display: flex;
+    justify-content: center;
+}
+.Login__container--form {
+    display: flex;
+    flex-direction: column;
+}
+.Login__container--rememberme {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: white;
+    margin-top: 10px;
+    align-items: flex-end;
+}
+.Login__container--rememberme a {
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+}
+.Login__container--rememberme a:hover {
+    text-decoration: underline;
+    
+}
+.Login__container--socialmedia > div {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.Login__container--socialmedia > div > img {
+    width: 30px;
+    margin-right: 10px;
+}
+.Login__container--register {
+    font-size: 14px;
+}
+.Login__container--register a {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.Login__container--register a:hover {
+    text-decoration: underline;
+}
+.Login__container--form > input {
+    background-color: transparent;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 2px solid white;
+    font-family: 'Livvic', sans-serif;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding: 8px;
+    outline: none;
+    height: 50px;
+}    
+::placeholder {
+    color: white;
+}
+.button {
+    background: rgba(255, 255, 255, 0.);
+    border-radius: 25px;
+    color: black;
+    height: 50px;
+    border: none;
+    margin: 5px 0px;
+    font-size: 16px;
+    font-family: 'Livvic', sans-serif;
+    cursor: pointer; 
+    letter-spacing: 1px;
+    font-weight: bold;
+    outline: none;
+}
+Footer {
+    /* background-color: rgba(142,142,203,1); */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 53px;
+}
+.Footer a {
+    color: white;
+    display: flex;
+    cursor: pointer;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.Footer a:hover {
+    text-decoration: underline;
+}
+@media only screen and (max-width: 600px){
+    .Login__container {
+        background-color: transparent;
+        border-color: transparent;
+        box-shadow: none;    
+        padding: 0px;
+        width: 100%;
+    }
+    .Header__logo {
+        width: calc(200px - 10%);
+        height: calc(65px - 10%);
+    }
+    .Footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
